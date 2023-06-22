@@ -1,0 +1,95 @@
+<?php
+
+    namespace App;
+
+    use Illuminate\Database\Eloquent\Model;
+
+    class TuberculosisOPT extends Model
+    {
+        protected $fillable
+            = [
+                "date",
+                "place",
+                "place_other",
+                "sex",
+                "s_name",
+                "f_name",
+                "birthday",
+                "encoding",
+                "diagnosis",
+                "date_tb_start",
+                "date_tb_end",
+                "date_release",
+                "phone_home",
+                "phone_mobile",
+                "phone_alt",
+                "state",
+                "address",
+                "have_home",
+                "problem_home",
+                "help_home",
+                "problem_registration",
+                "problem_state",
+                "help_state",
+                "status_marital",
+                "status_passport",
+                "problems",
+                "help_problems",
+                "type_problems",
+                "childrens",
+                "statement_1",
+                "statement_2",
+                "statement_3",
+                "statement_4",
+                "statement_5",
+                "statement_6",
+                "statement_7",
+                "statement_8",
+                "statement_9",
+                "help_statement",
+                "type_statement",
+                "education",
+                "education_before",
+                "profession_before",
+                "education_alt",
+                "want_education",
+                "want_education_name",
+                "relationships",
+                "have_family",
+                "have_family_problem",
+                "type_family_problem",
+                "hiv",
+                "help_hiv",
+                "type_hiv",
+                "addiction",
+                "help_addiction",
+                "help_medical",
+                "type_medical",
+                "help_disability",
+                "type_disability",
+                "emotions",
+                "job",
+                "return_job",
+                "profession_jail",
+                "status_job",
+                "plans",
+                "lawyer",
+                "psychologist",
+                "social",
+                "other_help",
+                "other_notes",
+                "recommendations",
+                "region",
+                "author"
+            ];
+
+        protected $casts
+            = [
+                'status_passport' => 'array',
+                'problems'        => 'array',
+                'childrens'       => 'array',
+                'education_alt'   => 'array',
+                'emotions'        => 'array',
+                'recommendations' => 'array'
+            ];
+    }
